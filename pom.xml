@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-  <parent>
-      <groupId>org.jahia.server</groupId>
-      <artifactId>jahia-root</artifactId>
-      <version>6.1-SNAPSHOT</version>
-  </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jahia.archetypes</groupId>
   <artifactId>jahia-archetypes</artifactId>
-  <version>6.0-CE</version>
+  <version>1.0</version>
   <name>Jahia Archetypes</name>
   <packaging>pom</packaging>
 
@@ -17,6 +12,25 @@
     <module>jahia-templates-archetype</module>
     <module>jahia-web-templates-archetype</module>
   </modules>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven Repository Switchboard</name>
+            <layout>default</layout>
+            <url>http://repo1.maven.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+    <distributionManagement>
+        <repository>
+            <id>jahiaRepository</id>
+            <url>scp://maven.jahia.org/var/www/vhosts/maven.jahia.org/html/maven2</url>
+        </repository>
+    </distributionManagement>
 
 <!--build>
     <plugins>
