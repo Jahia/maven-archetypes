@@ -45,7 +45,7 @@
         <search-results>searchresult.jsp</search-results>
     </common-pages>
     <templates default="simple" homepage="Home">
-        <template name="Home" display-name="Home page" filename="home.jsp" page-type="${artifactId}:home"/>
+        <template name="Home" display-name="Home page" filename="home.jsp" page-type="${artifactId.replace('-','_')}:home"/>
     </templates>
 </template-set>
 
