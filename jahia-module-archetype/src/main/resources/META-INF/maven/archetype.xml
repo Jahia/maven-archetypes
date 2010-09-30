@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
     
@@ -34,28 +33,22 @@
 
 -->
 
-<archetype-catalog>
-  <archetypes>
-    <archetype>
-       <groupId>org.jahia.archetypes</groupId>
-       <artifactId>jahia-templates-archetype</artifactId>
-       <version>1.1</version>
-       <repository>http://maven.jahia.org/maven2</repository>
-       <description>Jahia archetype for creating new standalone templates</description>
-    </archetype>
-    <archetype>
-       <groupId>org.jahia.archetypes</groupId>
-       <artifactId>jahia-web-templates-archetype</artifactId>
-       <version>1.1</version>
-       <repository>http://maven.jahia.org/maven2</repository>
-       <description>Jahia archetype for creating new templates inheriting from the Jahia Web templates</description>
-    </archetype> 
-    <archetype>
-       <groupId>org.jahia.archetypes</groupId>
-       <artifactId>jahia-module-archetype</artifactId>
-       <version>1.1</version>
-       <repository>http://maven.jahia.org/maven2</repository>
-       <description>Jahia archetype for creating new module</description>
-    </archetype>     
-  </archetypes>
-</archetype-catalog>
+<archetype>
+  <id>jahia-module-archetype</id>
+  <sources>
+    <source>src/main/java/</source>
+  </sources>
+  <resources>
+    <resource>src/site/</resource>
+    <resource>src/site/index.xml</resource>
+    <resource>src/site/apt/</resource>
+    <resource>src/site/apt/index.apt</resource>
+    <resource>src/main/webapp/resources/${moduleName}.properties</resource>
+    <resource>src/main/webapp/definitions.cnd</resource>
+    <resource>src/main/webapp/rules.drl</resource>    
+    <resource>src/main/webapp/css/</resource>    
+    <resource>src/main/webapp/icons/</resource>    
+    <resource>src/main/webapp/javascript/</resource>    
+  </resources>
+</archetype>
+

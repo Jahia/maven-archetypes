@@ -34,28 +34,42 @@
 
 -->
 
-<archetype-catalog>
-  <archetypes>
-    <archetype>
-       <groupId>org.jahia.archetypes</groupId>
-       <artifactId>jahia-templates-archetype</artifactId>
-       <version>1.1</version>
-       <repository>http://maven.jahia.org/maven2</repository>
-       <description>Jahia archetype for creating new standalone templates</description>
-    </archetype>
-    <archetype>
-       <groupId>org.jahia.archetypes</groupId>
-       <artifactId>jahia-web-templates-archetype</artifactId>
-       <version>1.1</version>
-       <repository>http://maven.jahia.org/maven2</repository>
-       <description>Jahia archetype for creating new templates inheriting from the Jahia Web templates</description>
-    </archetype> 
-    <archetype>
-       <groupId>org.jahia.archetypes</groupId>
-       <artifactId>jahia-module-archetype</artifactId>
-       <version>1.1</version>
-       <repository>http://maven.jahia.org/maven2</repository>
-       <description>Jahia archetype for creating new module</description>
-    </archetype>     
-  </archetypes>
-</archetype-catalog>
+<archetype-descriptor name="jahia-module-archetype">
+  <fileSets>
+    <fileSet filtered="true">
+      <directory>src/main/java</directory>
+    </fileSet>
+      <fileSet filtered="true">
+        <directory>src/site</directory>
+      </fileSet>
+      <fileSet filtered="true">
+        <directory>src/site/apt</directory>
+      </fileSet>
+    <fileSet filtered="true">
+      <directory>src/main/resources</directory>
+    </fileSet>    
+      <fileSet filtered="true">
+        <directory>src/main/webapp/css</directory>
+      </fileSet>
+    <fileSet filtered="true">
+      <directory>src/main/webapp/icons</directory>
+    </fileSet>        
+    <fileSet filtered="true">
+      <directory>src/main/webapp/javascript</directory>
+    </fileSet>
+    <fileSet filtered="true">
+      <directory>src/main/webapp/resources</directory>
+    </fileSet>
+  </fileSets>
+
+  <requiredProperties>
+      <requiredProperty key="artifactId"/>
+      <requiredProperty key="moduleName"/>
+      <requiredProperty key="groupId">
+        <defaultValue>org.jahia.modules</defaultValue>
+      </requiredProperty>
+      <requiredProperty key="package">
+        <defaultValue>org.jahia.modules</defaultValue>
+      </requiredProperty>
+  </requiredProperties>
+</archetype-descriptor>

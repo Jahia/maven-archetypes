@@ -11,6 +11,7 @@
   <modules>
     <module>jahia-templates-archetype</module>
     <module>jahia-web-templates-archetype</module>
+      <module>jahia-module-archetype</module>
   </modules>
 
     <repositories>
