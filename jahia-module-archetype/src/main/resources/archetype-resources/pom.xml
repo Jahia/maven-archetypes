@@ -44,7 +44,7 @@
         <version>6.5-SNAPSHOT</version>
     </parent>
     <groupId>org.jahia.modules</groupId>
-    <artifactId>${moduleName.replace(' ','-')}</artifactId>
+    <artifactId>${artifactId}</artifactId>
     <name>${moduleName}</name>
     <version>${version}</version>    
     <packaging>war</packaging>
