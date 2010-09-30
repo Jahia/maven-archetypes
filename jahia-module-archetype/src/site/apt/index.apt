@@ -1,0 +1,107 @@
+Maven Archetype for Jahia Modules
+
+  The Archetype Plugin allows the user to create a Maven 2 project from an existing template called an archetype.
+
+  It also allows the user to create an archetype from an existing project.
+
+* Usage
+
+  the goal archetype:generate creates the maven 2 structure for a Jahia module.
+
+  Creating a project from an archetype involves three steps:
+
+  ** the selection of the archetype,
+
+  ** the configuration of that archetype,
+
+  ** the effective creation of the project from the collected information.
+
+  ** set the resource file
+
++--
+   mvn archetype:generate -DarchetypeCatalog=http://maven.jahia.org/catalog
++--
+
+  ** DarchetypeCatalog defines the location of the catalog of available archetypes.
+
+
+  ** the selection of the archetype,
+
++--
+Choose archetype:
+1: http://localhost/ -> jahia-templates-archetype (Jahia archetype for creating new standalone templates)
+2: http://localhost/ -> jahia-web-templates-archetype (Jahia archetype for creating new templates inheriting from the
+   Jahia Web templates)
+3: http://localhost/ -> jahia-module-archetype (Jahia archetype for creating new module)
++--
+
+  to create a module, select the third choice.
+
+  ** the configuration of that archetype,
+
++--
+  Define value for artifactId: : MyModule
+  Define value for moduleName: : my module
+  Define value for version:  1.0-SNAPSHOT: :
+  Confirm properties configuration:
+  artifactId: MyModule
+  moduleName: my module
+  groupId: org.jahia.modules
+  package: org.jahia.modules
+  artifactId: MyModule
+  version: 1.0-SNAPSHOT
+   Y: : Y
++--
+
+  artifactID = the maven name of the the module
+  moduleName = the jahia name of the module
+  version = leave it to 1.0-SNAPSHOT or set your own version
+
+  It then asks for confirmation of the configuration and performs the creation of the project.
+
+  ** the effective creation of the project from the collected information.
+
+
+  Here's the resulting tree of the created project
+  
++--
+  MyModule
+  |-- pom.xml
+  `-- src
+      |-- main
+      |   |-- java
+      |   |-- resources
+      |   `-- webapp
+      |       |-- css
+      |       |-- icons
+      |       |-- javascript
+      |       `-- resources
+      `-- site
+          |-- apt
+          |   `-- index.apt
+          `-- site.xml
++--
+
+  ** set the resource file
+
+  as the resources are in the module itself, you have to create them manually after the project creation.
+  to do so, create a file with this rule : module name removing all spaces and up the case of the first letter
+  of the first word.
+
++--
+  MyModule/
+  |-- pom.xml
+  `-- src
+      |-- main
+      |   |-- java
+      |   |-- resources
+      |   `-- webapp
+      |       |-- css
+      |       |-- icons
+      |       |-- javascript
+      |       `-- resources
+      |           `-- Mymodule.properties
++--
+
+
+  
