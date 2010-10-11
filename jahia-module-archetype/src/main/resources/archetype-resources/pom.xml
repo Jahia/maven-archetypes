@@ -1,3 +1,4 @@
+#set($dollar = '$')
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
@@ -41,7 +42,7 @@
     <parent>
         <artifactId>jahia-modules</artifactId>
         <groupId>org.jahia.modules</groupId>
-        <version>6.5-SNAPSHOT</version>
+        <version>${jahiaPackageVersion}</version>
     </parent>
     <groupId>org.jahia.modules</groupId>
     <artifactId>${artifactId}</artifactId>
@@ -117,13 +118,13 @@
         <dependency>
             <groupId>org.jahia.server</groupId>
             <artifactId>jahia-impl</artifactId>
-            <version>${parent.version}</version>
+            <version>${jahiaPackageVersion}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.jahia.server</groupId>
             <artifactId>jahia-taglib</artifactId>
-            <version>${parent.version}</version>
+            <version>${jahiaPackageVersion}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -137,18 +138,18 @@
                     <warSourceExcludes>resources/*.properties</warSourceExcludes>
                     <archive>
                         <manifestEntries>
-		                	<Implementation-Title>${artifactId}</Implementation-Title>
-		                    <Implementation-Version>${parent.version}</Implementation-Version>
+		                	<Implementation-Title>${dollar}{project.name}</Implementation-Title>
+		                    <Implementation-Version>${dollar}{project.version}</Implementation-Version>
 		                    <Implementation-Vendor></Implementation-Vendor>
 		                    <Implementation-Vendor-Id></Implementation-Vendor-Id>
 		                    <Implementation-URL></Implementation-URL>
-		                    <Specification-Title>Archetype - jahia-module-archetype</Specification-Title>
-		                    <Specification-Version>${version}</Specification-Version>
+		                    <Specification-Title>${dollar}{project.name}</Specification-Title>
+		                    <Specification-Version>${dollar}{project.version}</Specification-Version>
 		                    <Specification-Vendor></Specification-Vendor>
-                            <package-name>${artifactId}</package-name>
+                            <package-name>${dollar}{project.name}</package-name>
                             <module-type>siteLayout</module-type>
                             <depends>Default Jahia Templates</depends>
-                            <root-folder>${artifactId}</root-folder>
+                            <root-folder>${dollar}{artifactId}</root-folder>
                         </manifestEntries>
                     </archive>
                 </configuration>
@@ -163,7 +164,7 @@
                         </goals>
                         <configuration>
                             <encoding>ISO-8859-1</encoding>
-                            <src>${basedir}/src/main/webapp/resources</src>
+                            <src>${dollar}{basedir}/src/main/webapp/resources</src>
                             <addToProjectResources>false</addToProjectResources>
                         </configuration>
                     </execution>
