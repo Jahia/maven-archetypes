@@ -40,10 +40,8 @@
   </sources>
   <resources>
     <resource>src/site/</resource>
-    <resource>src/site/index.xml</resource>
-    <resource>src/site/apt/</resource>
+    <resource>src/site/site.xml</resource>
     <resource>src/site/apt/index.apt</resource>
-    <resource>src/main/webapp/resources/${moduleName}.properties</resource>
     <resource>src/main/webapp/definitions.cnd</resource>
     <resource>src/main/webapp/rules.drl</resource>    
     <resource>src/main/webapp/css/</resource>    
