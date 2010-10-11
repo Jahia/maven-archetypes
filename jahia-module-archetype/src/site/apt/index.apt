@@ -40,22 +40,27 @@ Choose archetype:
   ** the configuration of that archetype,
 
 +--
-  Define value for artifactId: : MyModule
-  Define value for moduleName: : my module
-  Define value for version:  1.0-SNAPSHOT: :
+  Define value for artifactId: : my-module
+  Define value for moduleName: : My module
+  Define value for jahiaPackageVersion: : 6.5
   Confirm properties configuration:
-  artifactId: MyModule
-  moduleName: my module
+  artifactId: my-module
+  moduleName: My module
   groupId: org.jahia.modules
-  package: org.jahia.modules
-  artifactId: MyModule
+  jahiaPackageVersion: 6.5-SNAPSHOT
   version: 1.0-SNAPSHOT
+  artifactId: my-module
+  package: org.jahia.modules
    Y: : Y
 +--
 
-  artifactID = the maven name of the the module
-  moduleName = the jahia name of the module
-  version = leave it to 1.0-SNAPSHOT or set your own version
+  artifactId = the maven name of the the module (should be lowercase letters and no strange symbols)
+  moduleName = the Jahia name of the module
+  jahiaPackageVersion = This is the Jahia version you are using (e.g. 6.5 or during Jahia development 6.5-SNAPSHOT )
+  
+  version (will only be asked if you do not confirm the settings) = leave it to 1.0-SNAPSHOT or set your own version
+  groupId (will only be asked if you do not confirm the settings) = The default is org.jahia.modules, you can modify it, but it always has to end with .jahia.modules 
+  package (will only be asked if you do not confirm the settings) = This is the default package name for your Java classes. If you have none you can leave the default.
 
   It then asks for confirmation of the configuration and performs the creation of the project.
 
@@ -85,8 +90,8 @@ Choose archetype:
   ** set the resource file
 
   as the resources are in the module itself, you have to create them manually after the project creation.
-  to do so, create a file with this rule : module name removing all spaces and up the case of the first letter
-  of the first word.
+  to do so, create a file with this rule : module name in CamelCase (spaces removed and each elements initial letter capitalized). 
+  
 
 +--
   MyModule/
@@ -100,7 +105,7 @@ Choose archetype:
       |       |-- icons
       |       |-- javascript
       |       `-- resources
-      |           `-- Mymodule.properties
+      |           `-- MyModule.properties
 +--
 
 
