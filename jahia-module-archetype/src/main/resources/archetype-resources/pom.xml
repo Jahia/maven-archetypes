@@ -49,7 +49,7 @@
     <name>${moduleName}</name>
     <version>${version}</version>    
     <packaging>war</packaging>
-    <description>These are the custom module (${moduleName}) for running on a Jahia server.</description>
+    <description>This is the custom module (${moduleName}) for running on a Jahia server.</description>
     <repositories>
         <repository>
             <id>jahiaRepository</id>
@@ -147,7 +147,6 @@
 		                    <Specification-Version>${dollar}{project.version}</Specification-Version>
 		                    <Specification-Vendor></Specification-Vendor>
                             <package-name>${dollar}{project.name}</package-name>
-                            <module-type>siteLayout</module-type>
                             <depends>Default Jahia Templates</depends>
                             <root-folder>${dollar}{artifactId}</root-folder>
                         </manifestEntries>
