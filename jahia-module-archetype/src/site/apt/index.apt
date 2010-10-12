@@ -8,7 +8,7 @@ Maven Archetype for Jahia Modules
 
   the goal archetype:generate creates the maven 2 structure for a Jahia module.
 
-  Creating a project from an archetype involves three steps:
+  Creating a project from an archetype involves four steps:
 
   ** the selection of the archetype,
 
@@ -17,35 +17,36 @@ Maven Archetype for Jahia Modules
   ** the effective creation of the project from the collected information.
 
   ** set the resource file
+  
+  []
+  So you start with typing the following command in a command prompt:
 
 +--
    mvn archetype:generate -DarchetypeCatalog=http://maven.jahia.org/catalog
 +--
 
-  ** DarchetypeCatalog defines the location of the catalog of available archetypes.
+  -DarchetypeCatalog defines the location of the catalog of available archetypes.
 
 
-  ** the selection of the archetype,
+  [[1]] The selection of the archetype:
 
 +--
 Choose archetype:
-1: http://localhost/ -> jahia-templates-archetype (Jahia archetype for creating new standalone templates)
-2: http://localhost/ -> jahia-web-templates-archetype (Jahia archetype for creating new templates inheriting from the
-   Jahia Web templates)
-3: http://localhost/ -> jahia-module-archetype (Jahia archetype for creating new module)
+1: http://localhost/ -> jahia-templates-archetype (Jahia archetype for creating a new standalone template project (for Jahia version >= 6.0 and < 6.5))
+2: http://localhost/ -> jahia-web-templates-archetype (Jahia archetype for creating a new template project inheriting from the Jahia Web templates (for Jahia version >= 6.0 and < 6.5))
+3: http://localhost/ -> jahia-module-archetype (Jahia archetype for creating a new module (for Jahia version >= 6.5))
 +--
 
-  to create a module, select the third choice.
+  To create a module for Jahia 6.5 or later, select the third choice.
 
-  ** the configuration of that archetype,
+  [[2]] The configuration of that archetype:
 
 +--
-  Define value for artifactId: : my-module
-  Define value for moduleName: : My module
-  Define value for jahiaPackageVersion: : 6.5
+  Define value for moduleName: : My Module
+  Define value for jahiaPackageVersion: : 6.5-SNAPSHOT
+  Define value for artifactId: : my-module  
   Confirm properties configuration:
-  artifactId: my-module
-  moduleName: My module
+  moduleName: My Module
   groupId: org.jahia.modules
   jahiaPackageVersion: 6.5-SNAPSHOT
   version: 1.0-SNAPSHOT
@@ -54,59 +55,102 @@ Choose archetype:
    Y: : Y
 +--
 
-  artifactId = the maven name of the the module (should be lowercase letters and no strange symbols)
-  moduleName = the Jahia name of the module
-  jahiaPackageVersion = This is the Jahia version you are using (e.g. 6.5 or during Jahia development 6.5-SNAPSHOT )
-  
-  version (will only be asked if you do not confirm the settings) = leave it to 1.0-SNAPSHOT or set your own version
-  groupId (will only be asked if you do not confirm the settings) = The default is org.jahia.modules, you can modify it, but it always has to end with .jahia.modules 
-  package (will only be asked if you do not confirm the settings) = This is the default package name for your Java classes. If you have none you can leave the default.
+*--*--+
+| moduleName | The Jahia name of the module
+*--*--+
+| jahiaPackageVersion | This is the Jahia version you are using (e.g. 6.5 or during Jahia development prior releasing 6.5-SNAPSHOT )
+*--*--+
+| artifactId | The maven name of the the module (should be lowercase letters and no strange symbols)
+*--*--+
+| version\* | Leave it to 1.0-SNAPSHOT or set your own version
+*--*--+
+| groupId\* | The default is org.jahia.modules, you can modify it, but it always has to end with .jahia.modules
+*--*--+ 
+| package\* | This is the default package name for your Java classes. If you have none you can leave the default.
+*--*--+
 
-  It then asks for confirmation of the configuration and performs the creation of the project.
+  \*will only be asked if you do not confirm the settings
+    
+  You are asked for confirmation of the configuration, and after positive confirmation the project is created.
 
-  ** the effective creation of the project from the collected information.
-
+  [[3]] The effective creation of the project from the collected information:
 
   Here's the resulting tree of the created project
   
 +--
-  MyModule
+  my-module
   |-- pom.xml
   `-- src
       |-- main
       |   |-- java
       |   |-- resources
+      |   |   `-- META-INF
+      |   |       `-- my-module.tld.disabled
       |   `-- webapp
       |       |-- css
       |       |-- icons
+      |       |-- img      
       |       |-- javascript
-      |       `-- resources
+      |       |-- META-INF
+      |       |   `-- spring
+      |       |       `-- my-module.xml.disabled
+      |       |-- resources
+      |       |-- scripts
+      |       |-- definitions.cnd
+      |       `-- rules.drl
       `-- site
           |-- apt
           |   `-- index.apt
           `-- site.xml
 +--
 
-  ** set the resource file
+*--+--+
+| pom.xml | The Project Object Model XML file as required by Maven 2. Here you can add dependencies to other third party libraries required in your module. You can also fill in the missing settings in the \<manifestEntries\> section in order to have a proper MANIFEST.MF file created on Maven deployment.  
+*--+--+
+| src/main/java | The root folder of any Java source file. The folder structure underneath should match the package name of the Java class.
+*--+--+
+| src/main/resources/META-INF | In this directory you can place any custom taglibrary files, which can then be used in your JSPs. There is already a disabled example with a basic XML structure, which can be used for a start (enter a correct tag description and then remove the .disabled extension)   
+*--+--+
+| src/main/webapp/css | Contains all css for the module 
+*--+--+
+| src/main/webapp/icons | Contains all icons for the module content definitions
+*--+--+
+| src/main/webapp/img | Contains images for image based choicelists in the property definitions 
+*--+--+
+| src/main/webapp/javascript | Contains all javascripts for the module
+*--+--+
+| src/main/webapp/META-INF/spring | Spring XML files for creating configurations and beans. There is already a disabled example with a basic XML structure, which can be used for a start (enter a correct bean description and then remove the .disabled extension)
+*--+--+
+| src/main/webapp/resources | Contains all resources for the module
+*--+--+
+| src/main/webapp/scripts | Contains script initializers for choicelists in the property definitions.
+*--+--+
+| src/main/webapp/definitions.cnd | Content node definitions for the module
+*--+--+
+| src/main/webapp/rules.drl | Module rules
+*--+--+
+| src/site/site.xml | Maven site descriptor to describe the layout of the site 
+*--+--+
+| src/site/apt/index.apt | Default "Almost Plain Text" file to describe the usage of the new module.
+*--+--+
 
-  as the resources are in the module itself, you have to create them manually after the project creation.
-  to do so, create a file with this rule : module name in CamelCase (spaces removed and each elements initial letter capitalized). 
+  [[4]] Set the resource file(s):
+
+  As the resources are in the module itself, you have to create them manually after the project creation.
+  To do so, create a file with this rule :  get the module name and remove spaces (e.g. MyModule) and use the 
+  extension .properties for the default bundle. If you have resource bundle in different languages then
+  you need to add _<language-code> between the module name without spaces and the extension 
+  (e.g. MyModule_en.properties, MyModule_fr.properties).
   
 
 +--
-  MyModule/
-  |-- pom.xml
+  my-module
   `-- src
-      |-- main
-      |   |-- java
-      |   |-- resources
-      |   `-- webapp
-      |       |-- css
-      |       |-- icons
-      |       |-- javascript
-      |       `-- resources
-      |           `-- MyModule.properties
-+--
+      `-- main
+          `-- webapp
+              `-- resources
+                  |-- MyModule.properties
+                  |-- MyModule_fr.properties
+                  `-- MyModule_de.properties
++-- 
 
-
-  
