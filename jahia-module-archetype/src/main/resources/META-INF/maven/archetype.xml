@@ -39,14 +39,19 @@
     <source>src/main/java/</source>
   </sources>
   <resources>
-    <resource>src/site/</resource>
-    <resource>src/site/site.xml</resource>
-    <resource>src/site/apt/index.apt</resource>
+    <resource>src/main/resources/META-INF/${artifactId}.tld.disabled</resource>
     <resource>src/main/webapp/definitions.cnd</resource>
     <resource>src/main/webapp/rules.drl</resource>    
     <resource>src/main/webapp/css/</resource>    
-    <resource>src/main/webapp/icons/</resource>    
-    <resource>src/main/webapp/javascript/</resource>    
+    <resource>src/main/webapp/icons/</resource>
+    <resource>src/main/webapp/img/</resource>    
+    <resource>src/main/webapp/javascript/</resource>
+    <resource>src/main/webapp/META-INF/spring/${artifactId}.xml.disabled</resource>
+    <resource>src/main/webapp/resources/</resource>
+    <resource>src/main/webapp/scripts/</resource>
+    <resource>src/site/</resource>
+    <resource>src/site/site.xml</resource>
+    <resource>src/site/apt/index.apt</resource>
   </resources>
 </archetype>
 
