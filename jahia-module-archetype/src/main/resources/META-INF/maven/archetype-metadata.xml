@@ -66,6 +66,12 @@
     <fileSet filtered="true">
       <directory>src/site</directory>
     </fileSet>
+      <fileSet filtered="true">
+        <directory>src/main/assembly</directory>
+      </fileSet>
+      <fileSet filtered="true">
+        <directory>src/main/import</directory>
+      </fileSet>
   </fileSets>
 
   <requiredProperties>
