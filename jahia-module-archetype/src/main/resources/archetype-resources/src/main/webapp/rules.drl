@@ -1,6 +1,4 @@
 ###############################################################################
-package org.jahia.modules.docconverter.rules
-
 #list any import classes here.
 import org.jahia.services.content.rules.*
 import org.jahia.services.content.JCRContentUtils
@@ -12,6 +10,5 @@ expander rules.dsl
 global User user
 global Service service
 global Logger logger
-global DocumentConverterRuleService documentConverterService
 global JCRContentUtils jcrUtils
 ###############################################################################
