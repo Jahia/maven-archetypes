@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jahia.archetypes</groupId>
   <artifactId>jahia-archetypes</artifactId>
-  <version>1.1</version>
+  <version>1.2</version>
   <name>Jahia Archetypes</name>
   <packaging>pom</packaging>
 
