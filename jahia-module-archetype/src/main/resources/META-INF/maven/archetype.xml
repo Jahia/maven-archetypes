@@ -48,6 +48,7 @@
     <resource>src/main/webapp/javascript/</resource>
     <resource>src/main/webapp/META-INF/spring/${artifactId}.xml.disabled</resource>
     <resource>src/main/webapp/resources/</resource>
+    <resource>src/main/webapp/resources/__resourceBundleName__.properties</resource>    
     <resource>src/main/webapp/scripts/</resource>
     <resource>src/site/</resource>
     <resource>src/site/site.xml</resource>

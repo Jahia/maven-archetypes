@@ -95,6 +95,7 @@ Choose archetype:
       |       |   `-- spring
       |       |       `-- my-module.xml.disabled
       |       |-- resources
+      |       |   `-- __resourceBundleName__.properties     
       |       |-- scripts
       |       |-- definitions.cnd
       |       `-- rules.drl
@@ -134,13 +135,13 @@ Choose archetype:
 | src/site/apt/index.apt | Default "Almost Plain Text" file to describe the usage of the new module.
 *--+--+
 
+
   [[4]] Set the resource file(s):
 
-  As the resources are in the module itself, you have to create them manually after the project creation.
-  To do so, create a file with this rule :  get the module name and remove spaces (e.g. MyModule) and use the 
-  extension .properties for the default bundle. If you have resource bundle in different languages then
-  you need to add _<language-code> between the module name without spaces and the extension 
-  (e.g. MyModule_en.properties, MyModule_fr.properties).
+  As the resources are in the module itself, you have to create them manually after the project creation. To do so, create a file (or if 
+  existing you can simply rename the default __resourceBundleName__.properties) with this rule :  get the module name and remove spaces 
+  (e.g. MyModule) and use the extension .properties for the default bundle. If you have resource bundle in different languages then you need 
+  to add _<language-code> between the module name without spaces and the extension (e.g. MyModule_en.properties, MyModule_fr.properties).
   
 
 +--
