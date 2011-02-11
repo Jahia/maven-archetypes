@@ -52,6 +52,7 @@ Choose archetype:
   version: 1.0-SNAPSHOT
   artifactId: my-module
   package: org.jahia.modules
+  moduleType: templatesSet
    Y: : Y
 +--
 
@@ -68,6 +69,8 @@ Choose archetype:
 *--*--+ 
 | package\* | This is the default package name for your Java classes. If you have none you can leave the default.
 *--*--+
+| moduleType\* | The type of the module - can be "module" for simple module, or "templatesSet" for full templates set (default).
+*--*--+
 
   \*will only be asked if you do not confirm the settings
     
@@ -83,6 +86,10 @@ Choose archetype:
   `-- src
       |-- main
       |   |-- java
+      |   |-- import
+          |   `-- repository.xml
+      |   |-- assembly
+          |   `-- src.xml
       |   |-- resources
       |   |   `-- META-INF
       |   |       `-- my-module.tld.disabled
@@ -98,7 +105,7 @@ Choose archetype:
       |       |   `-- __resourceBundleName__.properties     
       |       |-- scripts
       |       |-- definitions.cnd
-      |       `-- rules.drl
+      |       `-- rules.drl.disabled
       `-- site
           |-- apt
           |   `-- index.apt

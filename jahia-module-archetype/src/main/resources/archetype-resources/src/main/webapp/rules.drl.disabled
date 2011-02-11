@@ -1,4 +1,6 @@
 ###############################################################################
+package ${groupId}.${artifactId}.rules
+
 #list any import classes here.
 import org.jahia.services.content.rules.*
 import org.jahia.services.content.JCRContentUtils
