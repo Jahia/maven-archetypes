@@ -1,11 +1,12 @@
 <assembly>
+    <id>import</id>
     <includeBaseDirectory>false</includeBaseDirectory>
     <formats>
         <format>zip</format>
     </formats>
     <fileSets>
         <fileSet>
-            <directory>${basedir}/src/main/import</directory>
+            <directory>${dollar}{basedir}/src/main/import</directory>
             <includes>
                 <include>**</include>
             </includes>
