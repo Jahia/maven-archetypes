@@ -3,7 +3,7 @@
 
     
     This file is part of Jahia: An integrated WCM, DMS and Portal Solution
-    Copyright (C) 2002-2009 Jahia Limited. All rights reserved.
+    Copyright (C) 2002-2011 Jahia Limited. All rights reserved.
     
     This program is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public License
@@ -58,6 +58,9 @@
       <directory>src/main/webapp/javascript</directory>
     </fileSet>
     <fileSet filtered="true">
+      <directory>src/main/webapp/META-INF</directory>
+    </fileSet>        
+    <fileSet filtered="true">
       <directory>src/main/webapp/resources</directory>
     </fileSet>
     <fileSet filtered="true">
@@ -66,9 +69,6 @@
     <fileSet filtered="true">
       <directory>src/site</directory>
     </fileSet>
-      <fileSet filtered="true">
-        <directory>src/main/assembly</directory>
-      </fileSet>
       <fileSet filtered="true">
         <directory>src/main/import</directory>
       </fileSet>

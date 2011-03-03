@@ -4,7 +4,7 @@
 
 
     This file is part of Jahia: An integrated WCM, DMS and Portal Solution
-    Copyright (C) 2002-2010 Jahia Limited. All rights reserved.
+    Copyright (C) 2002-2011 Jahia Limited. All rights reserved.
 
     This program is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public License
@@ -50,72 +50,6 @@
     <version>${version}</version>    
     <packaging>war</packaging>
     <description>This is the custom module (${moduleName}) for running on a Jahia server.</description>
-    <repositories>
-        <repository>
-            <id>jahiaRepository</id>
-            <name>Jahia's Maven Repository</name>
-            <url>http://maven.jahia.org/maven2</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>jahiaRepository</id>
-            <name>Jahia's Maven Repository</name>
-            <url>http://maven.jahia.org/maven2</url>
-        </pluginRepository>
-    </pluginRepositories>
-    <profiles>
-        <profile>
-            <id>eclipse-integration</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-eclipse-plugin</artifactId>
-                        <version>${dollar}{eclipse.plugin.version}</version>
-                        <configuration>
-                            <wtpversion>1.5</wtpversion>
-                            <additionalProjectnatures>
-                                <projectnature>org.eclipse.wst.common.project.facet.core.nature</projectnature>
-                                <projectnature>org.eclipse.wst.common.modulecore.ModuleCoreNature</projectnature>
-                                <projectnature>org.eclipse.jem.workbench.JavaEMFNature</projectnature>
-                            </additionalProjectnatures>
-                            <additionalBuildcommands>
-                                <buildCommand>
-                                    <name>org.eclipse.wst.common.project.facet.core.builder</name>
-                                    <arguments></arguments>
-                                </buildCommand>
-                                <buildCommand>
-                                    <name>org.eclipse.wst.validation.validationbuilder</name>
-                                    <arguments></arguments>
-                                </buildCommand>
-                            </additionalBuildcommands>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>module-docs</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-site-plugin</artifactId>
-                        <version>${dollar}{site.plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <phase>generate-resources</phase>
-                                <goals>
-                                    <goal>site</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
     <dependencies>
         <dependency>
             <groupId>org.jahia.server</groupId>
@@ -132,31 +66,6 @@
     </dependencies>
     <build>
         <plugins>
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-
-                <executions>
-                    <execution>
-                        <id>import</id>
-                        <configuration>
-                            <descriptors>
-                                <descriptor>src/main/assembly/src.xml</descriptor>
-                            </descriptors>
-                            <attach>false</attach>
-                            <finalName>import</finalName>
-                            <appendAssemblyId>false</appendAssemblyId>
-                            <outputDirectory>src/main/webapp</outputDirectory>                            
-                        </configuration>
-
-                        <phase>generate-resources</phase>
-
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -186,23 +95,6 @@
                         </manifestEntries>
                     </archive>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.jahia.server</groupId>
-                <artifactId>maven-jahia-plugin</artifactId>
-                <version>${dollar}{jahia.plugin.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>native2ascii</goal>
-                        </goals>
-                        <configuration>
-                            <encoding>ISO-8859-1</encoding>
-                            <src>${dollar}{basedir}/src/main/webapp/resources</src>
-                            <addToProjectResources>false</addToProjectResources>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

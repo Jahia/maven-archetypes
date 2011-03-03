@@ -2,7 +2,7 @@
 
     
     This file is part of Jahia: An integrated WCM, DMS and Portal Solution
-    Copyright (C) 2002-2009 Jahia Limited. All rights reserved.
+    Copyright (C) 2002-2011 Jahia Limited. All rights reserved.
     
     This program is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public License
@@ -40,13 +40,13 @@
   </sources>
   <resources>
     <resource>src/main/resources/META-INF/${artifactId}.tld.disabled</resource>
-    <resource>src/main/webapp/definitions.cnd</resource>
-    <resource>src/main/webapp/rules.drl</resource>    
     <resource>src/main/webapp/css/</resource>    
     <resource>src/main/webapp/icons/</resource>
     <resource>src/main/webapp/img/</resource>    
     <resource>src/main/webapp/javascript/</resource>
     <resource>src/main/webapp/META-INF/spring/${artifactId}.xml.disabled</resource>
+    <resource>src/main/webapp/META-INF/definitions.cnd</resource>
+    <resource>src/main/webapp/META-INF/rules.drl</resource>    
     <resource>src/main/webapp/resources/</resource>
     <resource>src/main/webapp/resources/__resourceBundleName__.properties</resource>    
     <resource>src/main/webapp/scripts/</resource>
