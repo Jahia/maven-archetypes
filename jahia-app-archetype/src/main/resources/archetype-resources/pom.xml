@@ -35,8 +35,8 @@
 
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
@@ -47,7 +47,7 @@
     <groupId>org.jahia.modules</groupId>
     <artifactId>${artifactId}</artifactId>
     <name>${moduleName}</name>
-    <version>${version}</version>    
+    <version>${version}</version>
     <packaging>war</packaging>
     <description>This is the custom module (${moduleName}) for running on a Jahia server.</description>
     <repositories>
@@ -89,20 +89,20 @@
                     <warSourceExcludes>resources/*.properties</warSourceExcludes>
                     <webResources>
                         <resource>
-                          <directory>${dollar}{project.build.directory}/native2ascii</directory>
-                          <targetPath>resources</targetPath>
+                            <directory>${dollar}{project.build.directory}/native2ascii</directory>
+                            <targetPath>resources</targetPath>
                         </resource>
                     </webResources>
                     <archive>
                         <manifestEntries>
-		                	<Implementation-Title>${dollar}{project.name}</Implementation-Title>
-		                    <Implementation-Version>${dollar}{project.version}</Implementation-Version>
-		                    <Implementation-Vendor></Implementation-Vendor>
-		                    <Implementation-Vendor-Id></Implementation-Vendor-Id>
-		                    <Implementation-URL></Implementation-URL>
-		                    <Specification-Title>${dollar}{project.name}</Specification-Title>
-		                    <Specification-Version>${dollar}{project.version}</Specification-Version>
-		                    <Specification-Vendor></Specification-Vendor>
+                            <Implementation-Title>${dollar}{project.name}</Implementation-Title>
+                            <Implementation-Version>${dollar}{project.version}</Implementation-Version>
+                            <Implementation-Vendor></Implementation-Vendor>
+                            <Implementation-Vendor-Id></Implementation-Vendor-Id>
+                            <Implementation-URL></Implementation-URL>
+                            <Specification-Title>${dollar}{project.name}</Specification-Title>
+                            <Specification-Version>${dollar}{project.version}</Specification-Version>
+                            <Specification-Vendor></Specification-Vendor>
                             <package-name>${dollar}{project.name}</package-name>
                             <depends>Default Jahia Templates</depends>
                             <root-folder>${dollar}{artifactId}</root-folder>
