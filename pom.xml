@@ -13,8 +13,7 @@
         <module>jahia-module-archetype</module>
         <module>jahia-templatesSet-archetype</module>
         <module>jahia-profileModule-archetype</module>
-    <module>yyyyyyyyyuu</module>
-  </modules>
+    </modules>
 
     <repositories>
         <repository>
