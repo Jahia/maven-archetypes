@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.jahia.archetypes</groupId>
-  <artifactId>jahia-archetypes</artifactId>
-  <version>1.4</version>
-  <name>Jahia Archetypes</name>
-  <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.jahia.archetypes</groupId>
+    <artifactId>jahia-archetypes</artifactId>
+    <version>1.4</version>
+    <name>Jahia Archetypes</name>
+    <packaging>pom</packaging>
 
-  <modules>
-    <module>jahia-templates-archetype</module>
-    <module>jahia-web-templates-archetype</module>
-      <module>jahia-module-archetype</module>
+    <modules>
+        <module>jahia-templates-archetype</module>
+        <module>jahia-web-templates-archetype</module>
+        <module>jahia-module-archetype</module>
+        <module>jahia-templatesSet-archetype</module>
+        <module>jahia-profileModule-archetype</module>
+    <module>yyyyyyyyyuu</module>
   </modules>
 
     <repositories>
@@ -25,7 +27,7 @@
             </snapshots>
         </repository>
     </repositories>
-    
+
     <distributionManagement>
         <repository>
             <id>jahiaRepository</id>
@@ -33,43 +35,43 @@
         </repository>
     </distributionManagement>
 
-<!--build>
-    <plugins>
-        <plugin>
-            <groupId>com.google.code.maven-license-plugin</groupId>
-            <artifactId>maven-license-plugin</artifactId>
-            <configuration>
-                <basedir>${basedir}</basedir>
-                <header>../header.txt</header>
-                <quiet>false</quiet>
-                <mapping>
-                    <cnd>JAVADOC_STYLE</cnd>
-                </mapping>
-                <failIfMissing>true</failIfMissing>
-                <aggregate>false</aggregate>
-                <includes>
-                    <include>**/**</include>
-                    <include>**/test/**</include>
-                </includes>
-                <excludes>
-                    <exclude>target/**</exclude>
-                    <exclude>.clover/**</exclude>
-                </excludes>
-                <useDefaultExcludes>true</useDefaultExcludes>
-                <useDefaultMapping>true</useDefaultMapping>
-                <properties>
-                </properties>
-                <encoding>iso-8859-1</encoding>
-            </configuration>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>check</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
-</build-->
+    <!--build>
+        <plugins>
+            <plugin>
+                <groupId>com.google.code.maven-license-plugin</groupId>
+                <artifactId>maven-license-plugin</artifactId>
+                <configuration>
+                    <basedir>${basedir}</basedir>
+                    <header>../header.txt</header>
+                    <quiet>false</quiet>
+                    <mapping>
+                        <cnd>JAVADOC_STYLE</cnd>
+                    </mapping>
+                    <failIfMissing>true</failIfMissing>
+                    <aggregate>false</aggregate>
+                    <includes>
+                        <include>**/**</include>
+                        <include>**/test/**</include>
+                    </includes>
+                    <excludes>
+                        <exclude>target/**</exclude>
+                        <exclude>.clover/**</exclude>
+                    </excludes>
+                    <useDefaultExcludes>true</useDefaultExcludes>
+                    <useDefaultMapping>true</useDefaultMapping>
+                    <properties>
+                    </properties>
+                    <encoding>iso-8859-1</encoding>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build-->
 
 </project>

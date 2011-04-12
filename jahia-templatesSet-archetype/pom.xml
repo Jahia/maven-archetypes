@@ -6,8 +6,8 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jahia.archetypes</groupId>
-  <artifactId>jahia-module-archetype</artifactId>
-  <version>1.9</version>
-  <name>Archetype - jahia-module-archetype</name>
+  <artifactId>jahia-templatesSet-archetype</artifactId>
+  <version>1.0</version>
+  <name>Archetype - jahia-templatesSet-archetype</name>
   <url>http://maven.apache.org</url>
 </project>
