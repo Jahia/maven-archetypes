@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> 
 <!--
-
+ 
     
     This file is part of Jahia: An integrated WCM, DMS and Portal Solution
     Copyright (C) 2002-2011 Jahia Limited. All rights reserved.
@@ -31,31 +31,52 @@
     in accordance with the terms contained in a separate written agreement
     between you and Jahia Limited. If you are unsure which license is appropriate
     for your use, please contact the sales department at sales@jahia.com.
-
--->
-
-<archetype-catalog>
-  <archetypes>
-    <archetype>
-       <groupId>org.jahia.archetypes</groupId>
-       <artifactId>jahia-templates-archetype</artifactId>
-       <version>1.3</version>
-       <repository>http://maven.jahia.org/maven2</repository>
-       <description>Jahia archetype for creating a new standalone template project (for Jahia version &gt;= 6.0 and &lt; 6.5)</description>
-    </archetype>
-    <archetype>
-       <groupId>org.jahia.archetypes</groupId>
-       <artifactId>jahia-web-templates-archetype</artifactId>
-       <version>1.3</version>
-       <repository>http://maven.jahia.org/maven2</repository>
-       <description>Jahia archetype for creating a new template project inheriting from the Jahia Web templates (for Jahia version &gt;= 6.0 and &lt; 6.5)</description>
+ 
+--> 
+ 
+<archetype-catalog> 
+  <archetypes> 
+    <archetype> 
+       <groupId>org.jahia.archetypes</groupId> 
+       <artifactId>jahia-templates-archetype</artifactId> 
+       <version>1.4</version> 
+       <repository>http://maven.jahia.org/maven2</repository> 
+       <description>Jahia archetype for creating a new standalone template project (for Jahia version &gt;= 6.0 and &lt; 6.5)</description> 
     </archetype> 
-    <archetype>
-       <groupId>org.jahia.archetypes</groupId>
-       <artifactId>jahia-module-archetype</artifactId>
-       <version>1.7</version>
-       <repository>http://maven.jahia.org/maven2</repository>
-       <description>Jahia archetype for creating a new module (for Jahia version &gt;= 6.5)</description>
+    <archetype> 
+       <groupId>org.jahia.archetypes</groupId> 
+       <artifactId>jahia-web-templates-archetype</artifactId> 
+       <version>1.4</version> 
+       <repository>http://maven.jahia.org/maven2</repository> 
+       <description>Jahia archetype for creating a new template project inheriting from the Jahia Web templates (for Jahia version &gt;= 6.0 and &lt; 6.5)</description> 
+    </archetype> 
+    <archetype> 
+       <groupId>org.jahia.archetypes</groupId> 
+       <artifactId>jahia-module-archetype</artifactId> 
+       <version>1.11</version> 
+       <repository>http://maven.jahia.org/maven2</repository> 
+       <description>Jahia archetype for creating a new module (for Jahia version &gt;= 6.5)</description> 
     </archetype>     
-  </archetypes>
-</archetype-catalog>
+    <archetype> 
+       <groupId>org.jahia.archetypes</groupId> 
+       <artifactId>jahia-app-archetype</artifactId> 
+       <version>1.2</version> 
+       <repository>http://maven.jahia.org/maven2</repository> 
+       <description>Jahia archetype for creating a new app (for Jahia version &gt;= 6.5)</description> 
+    </archetype>     
+    <archetype> 
+       <groupId>org.jahia.archetypes</groupId> 
+       <artifactId>jahia-templatesSet-archetype</artifactId> 
+       <version>1.3</version> 
+       <repository>http://maven.jahia.org/maven2</repository> 
+       <description>Jahia archetype for creating a new templates set (for Jahia version &gt;= 6.5)</description> 
+    </archetype>     
+    <archetype> 
+       <groupId>org.jahia.archetypes</groupId> 
+       <artifactId>jahia-profileModule-archetype</artifactId> 
+       <version>1.2</version> 
+       <repository>http://maven.jahia.org/maven2</repository> 
+       <description>Jahia archetype for creating a new profile module (for Jahia version &gt;= 6.5)</description> 
+    </archetype> 
+  </archetypes> 
+</archetype-catalog> 
