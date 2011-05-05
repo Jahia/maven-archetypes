@@ -4,7 +4,8 @@
               xmlns:jmix="http://www.jahia.org/jahia/mix/1.0" xmlns:j="http://www.jahia.org/jahia/1.0"
               xmlns:mix="http://www.jcp.org/jcr/mix/1.0" >
     <templateSets jcr:primaryType="jnt:templateSets">
-        <${artifactId} j:installedModules="${artifactId}" j:siteType="profileModule" jcr:primaryType="jnt:virtualsite">
+        <${artifactId} jcr:primaryType="jnt:virtualsite" j:installedModules="${artifactId}"
+            j:siteType="profileModule" j:dependencies="templates-system">
             <portlets jcr:primaryType="jnt:portletFolder"/>
             <files jcr:primaryType="jnt:folder"/>
             <contents jcr:primaryType="jnt:contentFolder">

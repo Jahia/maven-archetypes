@@ -4,11 +4,9 @@
               xmlns:jmix="http://www.jahia.org/jahia/mix/1.0" xmlns:j="http://www.jahia.org/jahia/1.0"
               xmlns:mix="http://www.jcp.org/jcr/mix/1.0" >
     <templateSets jcr:primaryType="jnt:templateSets">
-        <${artifactId} j:installedModules="${artifactId}" j:siteType="templatesSet" jcr:primaryType="jnt:virtualsite">
-            <home jcr:mixinTypes="jmix:sitemap"
-                  j:displayInMenu="primary"
-                  jcr:primaryType="jnt:page" changefreq="monthly"
-                  j:templateNode="/templatesSet/${artifactId}/templates/base/home" priority="0.5">
+        <${artifactId} jcr:primaryType="jnt:virtualsite" j:installedModules="${artifactId}" j:siteType="templatesSet" >
+            <home j:displayInMenu="primary" j:isHomePage="true"
+                  jcr:primaryType="jnt:page" j:templateNode="/templatesSet/${artifactId}/templates/base/home">
             </home>
 
             <portlets jcr:primaryType="jnt:portletFolder"/>
