@@ -6,7 +6,7 @@
     <templateSets jcr:primaryType="jnt:templateSets">
         <${artifactId} jcr:primaryType="jnt:virtualsite" j:installedModules="${artifactId}" j:siteType="templatesSet" >
             <home j:displayInMenu="primary" j:isHomePage="true"
-                  jcr:primaryType="jnt:page" j:templateNode="/templatesSet/${artifactId}/templates/base/home">
+                  jcr:primaryType="jnt:page" j:templateNode="/templateSets/${artifactId}/templates/base/home">
             </home>
 
             <portlets jcr:primaryType="jnt:portletFolder"/>

@@ -67,7 +67,7 @@
     <archetype> 
        <groupId>org.jahia.archetypes</groupId> 
        <artifactId>jahia-templatesSet-archetype</artifactId> 
-       <version>1.5</version>
+       <version>1.6</version>
        <repository>http://maven.jahia.org/maven2</repository> 
        <description>Jahia archetype for creating a new templates set (for Jahia version &gt;= 6.5)</description> 
     </archetype>     
