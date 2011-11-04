@@ -91,6 +91,7 @@
                             <Specification-Vendor></Specification-Vendor>
                             <package-name>${dollar}{project.name}</package-name>
                             <depends>Default Jahia Templates</depends>
+                            <module-type>jahiapp</module-type>
                             <root-folder>${dollar}{artifactId}</root-folder>
                         </manifestEntries>
                     </archive>

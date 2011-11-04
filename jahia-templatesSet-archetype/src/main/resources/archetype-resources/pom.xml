@@ -92,6 +92,7 @@
                             <package-name>${dollar}{project.name}</package-name>
                             <depends>Default Jahia Templates</depends>
                             <root-folder>${dollar}{artifactId}</root-folder>
+                            <module-type>templatesSet</module-type>
                         </manifestEntries>
                     </archive>
                     <archiveClasses>true</archiveClasses>
