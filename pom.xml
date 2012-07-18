@@ -6,6 +6,12 @@
     <version>2.0</version>
     <name>Jahia Archetypes</name>
     <packaging>pom</packaging>
+    
+    <url>http://www.jahia.com</url>  
+    <organization>
+        <name>Jahia Solutions Group SA</name>
+        <url>http://www.jahia.com</url>
+    </organization>
 
     <modules>
         <module>jahia-module-archetype</module>
@@ -36,8 +42,26 @@
         </repository>    
     </distributionManagement>
 
-    <!--build>
-        <plugins>
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>2.2</version>
+      </extension>
+    </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    
+        <!--plugins>
             <plugin>
                 <groupId>com.google.code.maven-license-plugin</groupId>
                 <artifactId>maven-license-plugin</artifactId>
@@ -72,7 +96,7 @@
                     </execution>
                 </executions>
             </plugin>
-        </plugins>
-    </build-->
+        </plugins-->
+    </build>
 
 </project>

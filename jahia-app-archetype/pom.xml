@@ -5,9 +5,8 @@
       <version>2.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.jahia.archetypes</groupId>
   <artifactId>jahia-app-archetype</artifactId>
+  <name>Archetype - jahia-app-archetype</name>  
   <version>2.0</version>
-  <name>Archetype - jahia-app-archetype</name>
-  <url>http://maven.apache.org</url>
+  <packaging>maven-archetype</packaging>
 </project>
