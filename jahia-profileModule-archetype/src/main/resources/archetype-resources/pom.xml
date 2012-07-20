@@ -121,14 +121,14 @@
                         <manifestEntries>
 		                	<Implementation-Title>${dollar}{project.name}</Implementation-Title>
 		                    <Implementation-Version>${dollar}{project.version}</Implementation-Version>
-		                    <Implementation-Vendor></Implementation-Vendor>
-		                    <Implementation-Vendor-Id></Implementation-Vendor-Id>
-		                    <Implementation-URL></Implementation-URL>
-		                    <Specification-Title>${dollar}{project.name}</Specification-Title>
-		                    <Specification-Version>${dollar}{project.version}</Specification-Version>
-		                    <Specification-Vendor></Specification-Vendor>
+                            <Implementation-Vendor>${dollar}{jahia.manifest.vendor.name}</Implementation-Vendor>
+                            <Implementation-Vendor-Id>${dollar}{jahia.manifest.vendor.id}</Implementation-Vendor-Id>
+                            <Implementation-URL>${dollar}{jahia.manifest.vendor.url}</Implementation-URL>
+                            <Specification-Title>${dollar}{project.name}</Specification-Title>
+                            <Specification-Version>${dollar}{project.version}</Specification-Version>
+                            <Specification-Vendor>${dollar}{jahia.manifest.vendor.name}</Specification-Vendor>
                             <package-name>${dollar}{project.name}</package-name>
-                            <depends>Default Jahia Templates</depends>
+                            <depends>default</depends>
                             <root-folder>${dollar}{artifactId}</root-folder>
                             <module-type>profileModule</module-type>
                         </manifestEntries>
