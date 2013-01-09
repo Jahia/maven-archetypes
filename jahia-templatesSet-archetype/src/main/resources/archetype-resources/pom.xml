@@ -128,7 +128,7 @@
                             <Specification-Version>${dollar}{project.version}</Specification-Version>
                             <Specification-Vendor>${dollar}{jahia.manifest.vendor.name}</Specification-Vendor>
                             <package-name>${dollar}{project.name}</package-name>
-                            <depends>default</depends>
+                            <depends>default,grid</depends>
                             <root-folder>${dollar}{artifactId}</root-folder>
                             <module-type>templatesSet</module-type>
                         </manifestEntries>
