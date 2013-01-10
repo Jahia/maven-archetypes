@@ -7,7 +7,7 @@
         <${artifactId} jcr:primaryType="jnt:virtualsite" j:installedModules="${artifactId}" j:siteType="templatesSet" >
             <home j:displayInMenu="primary" j:isHomePage="true"
                   jcr:primaryType="jnt:page" j:templateNode="/templateSets/${artifactId}/templates/base/home">
-                <j:translation_en jcr:language="en" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Hopme"/>
+                <j:translation_en jcr:language="en" jcr:mixinTypes="mix:title" jcr:primaryType="jnt:translation" jcr:title="Home"/>
             </home>
 
             <portlets jcr:primaryType="jnt:portletFolder"/>
