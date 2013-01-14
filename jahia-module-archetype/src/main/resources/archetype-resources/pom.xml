@@ -127,6 +127,7 @@
                             <Specification-Title>${dollar}{project.name}</Specification-Title>
                             <Specification-Version>${dollar}{project.version}</Specification-Version>
                             <Specification-Vendor>${dollar}{jahia.manifest.vendor.name}</Specification-Vendor>
+                            <Source-Folders>${project.basedir}</Source-Folders>
                             <package-name>${dollar}{project.name}</package-name>
                             <depends>default</depends>
                             <root-folder>${dollar}{artifactId}</root-folder>
