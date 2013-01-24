@@ -18,6 +18,7 @@
         <module>jahia-app-archetype</module>
         <module>jahia-templatesSet-archetype</module>
         <module>jahia-profileModule-archetype</module>
+        <module>jahia-bundle-archetype</module>
     </modules>
 
     <repositories>
