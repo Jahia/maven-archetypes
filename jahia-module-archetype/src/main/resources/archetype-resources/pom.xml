@@ -8,7 +8,7 @@
 
     For more information, please visit http://www.jahia.com.
 
-    Copyright (C) 2002-2012 Jahia Solutions Group SA. All rights reserved.
+    Copyright (C) 2002-2013 Jahia Solutions Group SA. All rights reserved.
 
     This program is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public License
@@ -49,12 +49,12 @@
         <groupId>org.jahia.modules</groupId>
         <version>${jahiaPackageVersion}</version>
     </parent>
-    <groupId>org.jahia.modules</groupId>
+    <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>
     <name>${moduleName}</name>
     <version>${version}</version>    
-    <packaging>war</packaging>
-    <description>This is the custom module (${moduleName}) for running on a Jahia server.</description>
+    <packaging>bundle</packaging>
+    <description>This is the custom module (${moduleName}) for running on a Jahia xCM server.</description>
     
     <repositories>
         <repository>
@@ -89,52 +89,13 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>jar</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <configuration>
-                            <classifier>classes</classifier>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>${dollar}{war.plugin.version}</version>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <warSourceExcludes>resources/*.properties</warSourceExcludes>
-                    <webResources>
-                        <resource>
-                          <directory>${dollar}{project.build.directory}/native2ascii</directory>
-                          <targetPath>resources</targetPath>
-                        </resource>
-                    </webResources>
-                    <archive>
-                        <manifestEntries>
-		                	<Implementation-Title>${dollar}{project.name}</Implementation-Title>
-		                    <Implementation-Version>${dollar}{project.version}</Implementation-Version>
-                            <Implementation-Vendor>${dollar}{jahia.manifest.vendor.name}</Implementation-Vendor>
-                            <Implementation-Vendor-Id>${dollar}{jahia.manifest.vendor.id}</Implementation-Vendor-Id>
-                            <Implementation-URL>${dollar}{jahia.manifest.vendor.url}</Implementation-URL>
-                            <Specification-Title>${dollar}{project.name}</Specification-Title>
-                            <Specification-Version>${dollar}{project.version}</Specification-Version>
-                            <Specification-Vendor>${dollar}{jahia.manifest.vendor.name}</Specification-Vendor>
-                            <Source-Folders>${project.basedir}</Source-Folders>
-                            <package-name>${dollar}{project.name}</package-name>
-                            <depends>default</depends>
-                            <root-folder>${dollar}{artifactId}</root-folder>
-                            <module-type>module</module-type>
-                        </manifestEntries>
-                    </archive>
-                    <archiveClasses>true</archiveClasses>
+                    <instructions>
+                        <Jahia-Depends>default</Jahia-Depends>
+                    </instructions>
                 </configuration>
             </plugin>
         </plugins>

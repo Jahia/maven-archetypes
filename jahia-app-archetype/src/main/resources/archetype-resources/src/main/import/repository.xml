@@ -4,7 +4,7 @@
               xmlns:jmix="http://www.jahia.org/jahia/mix/1.0" xmlns:j="http://www.jahia.org/jahia/1.0"
               xmlns:mix="http://www.jcp.org/jcr/mix/1.0" >
     <templateSets jcr:primaryType="jnt:templateSets">
-        <${artifactId} jcr:primaryType="jnt:virtualsite" j:installedModules="${artifactId}" j:siteType="module" >
+        <${artifactId} jcr:primaryType="jnt:virtualsite" j:installedModules="${artifactId}" j:siteType="jahiapp">
             <portlets jcr:primaryType="jnt:portletFolder"/>
             <files jcr:primaryType="jnt:folder"/>
             <contents jcr:primaryType="jnt:contentFolder"/>
