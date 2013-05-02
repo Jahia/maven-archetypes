@@ -55,7 +55,12 @@
     <version>${version}</version>    
     <packaging>bundle</packaging>
     <description>This is the custom JahiApp module (${moduleName}) for running on a Jahia xCM server.</description>
-    
+
+    <scm>
+        <connection>scm:dummy:uri</connection>
+        <developerConnection>scm:dummy:uri</developerConnection>
+    </scm>
+
     <repositories>
         <repository>
             <id>jahia-public</id>
@@ -85,7 +90,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>    
-    
+
     <build>
         <plugins>
             <plugin>
