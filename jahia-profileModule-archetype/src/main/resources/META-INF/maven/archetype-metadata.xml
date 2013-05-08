@@ -17,6 +17,12 @@
 		<fileSet filtered="true">
 			<directory>src/site</directory>
 		</fileSet>
+        <fileSet>
+            <directory></directory>
+            <includes>
+                <include>.gitignore</include>
+            </includes>
+        </fileSet>
 	</fileSets>
 
 	<requiredProperties>
