@@ -5,9 +5,8 @@
       <version>1.4</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.jahia.archetypes</groupId>
   <artifactId>jahia-profileModule-archetype</artifactId>
-  <version>1.7</version>
+  <version>1.8</version>
   <name>Archetype - jahia-profileModule-archetype</name>
   <url>http://maven.apache.org</url>
 </project>

@@ -1,5 +1,6 @@
+#set($artifactIdTransformed = $artifactId.toLowerCase().replace('-', '').replace('_', '').replace(' ', ''))
 ###############################################################################
-package ${groupId}.${artifactId}.rules
+package ${groupId}.${artifactIdTransformed}.rules
 
 #list any import classes here.
 import org.jahia.services.content.rules.*

@@ -58,28 +58,28 @@
     <archetype> 
        <groupId>org.jahia.archetypes</groupId> 
        <artifactId>jahia-module-archetype</artifactId> 
-       <version>1.15</version>
+       <version>1.16</version>
        <repository>http://maven.jahia.org/maven2</repository> 
        <description>Jahia archetype for creating a new module (for Jahia version &gt;= 6.5)</description> 
     </archetype>     
     <archetype> 
        <groupId>org.jahia.archetypes</groupId> 
        <artifactId>jahia-app-archetype</artifactId> 
-       <version>1.7</version>
+       <version>1.8</version>
        <repository>http://maven.jahia.org/maven2</repository> 
        <description>Jahia archetype for creating a new app (for Jahia version &gt;= 6.5)</description> 
     </archetype>     
     <archetype> 
        <groupId>org.jahia.archetypes</groupId> 
        <artifactId>jahia-templatesSet-archetype</artifactId> 
-       <version>1.11</version>
+       <version>1.12</version>
        <repository>http://maven.jahia.org/maven2</repository> 
        <description>Jahia archetype for creating a new templates set (for Jahia version &gt;= 6.5)</description> 
     </archetype>     
     <archetype> 
        <groupId>org.jahia.archetypes</groupId> 
        <artifactId>jahia-profileModule-archetype</artifactId> 
-       <version>1.7</version>
+       <version>1.8</version>
        <repository>http://maven.jahia.org/maven2</repository> 
        <description>Jahia archetype for creating a new profile module (for Jahia version &gt;= 6.5)</description> 
     </archetype> 
