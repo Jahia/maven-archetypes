@@ -1,17 +1,15 @@
 #set($artifactIdTransformed = $artifactId.toLowerCase().replace('-', '').replace('_', '').replace(' ', ''))
-###############################################################################
 package ${groupId}.${artifactIdTransformed}.rules
 
-#list any import classes here.
+// list any import classes here.
 import org.jahia.services.content.rules.*
 import org.jahia.services.content.JCRContentUtils
 import org.slf4j.Logger
 
 expander rules.dsl
 
-#declare any global variables here
+// declare any global variables here
 global User user
 global Service service
 global Logger logger
 global JCRContentUtils jcrUtils
-###############################################################################
