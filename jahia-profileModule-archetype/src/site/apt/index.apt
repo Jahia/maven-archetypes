@@ -49,14 +49,14 @@ Choose a number or apply filter (format: [groupId:]artifactId, case sensitive co
   [INFO] Using property: artifactId = sample
   [INFO] Using property: version = 1.0-SNAPSHOT
   [INFO] Using property: package = org.jahia.modules
-  [INFO] Using property: jahiaPackageVersion = 7.0.0.0
+  [INFO] Using property: digitalFactoryVersion = 7.0.0.0
   [INFO] Using property: moduleName = Sample Module
   Confirm properties configuration:
   groupId: org.jahia.modules
   artifactId: sample
   version: 1.0-SNAPSHOT
   package: org.jahia.modules
-  jahiaPackageVersion: 7.0.0.0
+  digitalFactoryVersion: 7.0.0.0
   moduleName: Sample Module
    Y: : Y
 +--
@@ -64,7 +64,7 @@ Choose a number or apply filter (format: [groupId:]artifactId, case sensitive co
 *--*--+
 | moduleName | The Jahia name of the module
 *--*--+
-| jahiaPackageVersion | This is the Digital Factory version you are using (e.g. 7.0.0.0)
+| digitalFactoryVersion | This is the Digital Factory version you are using (e.g. 7.0.0.0)
 *--*--+
 | artifactId | The Maven name of the the module (should be lowercase letters and no strange symbols)
 *--*--+

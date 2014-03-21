@@ -35,7 +35,7 @@
 		<requiredProperty key="groupId">
 			<defaultValue>org.jahia.modules</defaultValue>
 		</requiredProperty>
-		<requiredProperty key="jahiaPackageVersion">
+		<requiredProperty key="digitalFactoryVersion">
 			<defaultValue>7.0.0.0-SNAPSHOT</defaultValue>
 		</requiredProperty>
 		<requiredProperty key="version">
