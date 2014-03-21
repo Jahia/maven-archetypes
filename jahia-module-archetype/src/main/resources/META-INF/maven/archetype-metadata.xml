@@ -33,7 +33,7 @@
 			<defaultValue>org.jahia.modules</defaultValue>
 		</requiredProperty>
 		<requiredProperty key="digitalFactoryVersion">
-			<defaultValue>7.0.0.0</defaultValue>
+			<defaultValue>7.0.0.0-SNAPSHOT</defaultValue>
 		</requiredProperty>
 		<requiredProperty key="version">
 			<defaultValue>1.0-SNAPSHOT</defaultValue>
