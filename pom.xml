@@ -106,6 +106,12 @@
         </repository>
     </repositories>
 
+    <scm>
+        <connection>scm:svn:https://devtools.jahia.com/svn/maven-archetypes/trunk/</connection>
+        <developerConnection>scm:svn:https://devtools.jahia.com/svn/maven-archetypes/trunk/</developerConnection>
+        <url>https://devtools.jahia.com/svn/maven-archetypes/trunk</url>
+    </scm>
+    
     <distributionManagement>
         <repository>
             <id>jahia-releases</id>
