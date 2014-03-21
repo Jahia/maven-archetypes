@@ -86,7 +86,7 @@
     <name>${moduleName}</name>
     <version>${version}</version>    
     <packaging>bundle</packaging>
-    <description>This is the custom profile module (${moduleName}) for running on a Jahia xCM server.</description>
+    <description>This is the custom profile module (${moduleName}) for running on a Digital Factory server.</description>
 
     <scm>
         <connection>scm:dummy:uri</connection>
