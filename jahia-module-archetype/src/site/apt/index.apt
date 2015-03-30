@@ -88,21 +88,17 @@ Choose a number or apply filter (format: [groupId:]artifactId, case sensitive co
   |-- pom.xml
   |-- .gitignore
   `-- src
-      |-- main
-      |   |-- java
-      |   `-- resources
-      |       |-- META-INF
-      |       |   |-- spring
-      |       |   |   `-- sample.xml.disabled
-      |       |   |-- definitions.cnd
-      |       |   |-- rules.drl.disabled
-      |       |   `-- sample.tld.disabled
-      |       `-- resources
-      |       |   `-- sample.properties     
-      `-- site
-          |-- apt
-          |   `-- index.apt
-          `-- site.xml
+      `-- main
+          |-- java
+          `-- resources
+              |-- META-INF
+              |   |-- spring
+              |   |   `-- sample.xml.disabled
+              |   |-- definitions.cnd
+              |   |-- rules.drl.disabled
+              |   `-- sample.tld.disabled
+              `-- resources
+                  `-- sample.properties
 +--
 
 *--+--+
