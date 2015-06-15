@@ -74,7 +74,7 @@
 	<parent>
 		<groupId>org.jahia.archetypes</groupId>
 		<artifactId>jahia-archetypes</artifactId>
-		<version>2.3</version>
+		<version>2.4-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>jahia-templatesSet-archetype</artifactId>
