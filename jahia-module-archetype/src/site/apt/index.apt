@@ -6,7 +6,7 @@ Maven Archetype for Jahia Modules
 
 * Usage
 
-  the goal archetype:generate creates the Maven structure for a Digital Factory module.
+  the goal archetype:generate creates the Maven structure for a Digital Experience Manager module.
 
   Creating a project from an archetype involves four steps:
 
@@ -33,14 +33,14 @@ Maven Archetype for Jahia Modules
 +--
 Choose archetype:
 1: https://... -> org.jahia.archetypes:jahia-migration-archetype (This is an archetype to generate a migration module)
-2: https://... -> org.jahia.archetypes:jahia-module-archetype (Archetype for creating a new module project to be run on a Digital Factory server)
-3: https://... -> org.jahia.archetypes:jahia-app-archetype (Archetype for creating a new JahiApp module project to be run on a Digital Factory server)
-4: https://... -> org.jahia.archetypes:jahia-templatesSet-archetype (Archetype for creating a new template set project to be run on a Digital Factory server)
-5: https://... -> org.jahia.archetypes:jahia-profileModule-archetype (Archetype for creating a new profile module project to be run on a Digital Factory server)
+2: https://... -> org.jahia.archetypes:jahia-module-archetype (Archetype for creating a new module project to be run on a Digital Experience Manager server)
+3: https://... -> org.jahia.archetypes:jahia-app-archetype (Archetype for creating a new JahiApp module project to be run on a Digital Experience Manager server)
+4: https://... -> org.jahia.archetypes:jahia-templatesSet-archetype (Archetype for creating a new template set project to be run on a Digital Experience Manager server)
+5: https://... -> org.jahia.archetypes:jahia-profileModule-archetype (Archetype for creating a new profile module project to be run on a Digital Experience Manager server)
 Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): :
 +--
 
-  To create a module for Digital Factory 7.0 or later, select the third choice.
+  To create a module for Digital Experience Manager 7.1.1.0 or later, select the third choice.
 
   [[2]] The configuration of that archetype:
 
@@ -49,14 +49,14 @@ Choose a number or apply filter (format: [groupId:]artifactId, case sensitive co
   [INFO] Using property: artifactId = sample
   [INFO] Using property: version = 1.0-SNAPSHOT
   [INFO] Using property: package = org.jahia.modules
-  [INFO] Using property: digitalFactoryVersion = 7.1.0.0
+  [INFO] Using property: digitalFactoryVersion = 7.1.1.0
   [INFO] Using property: moduleName = Sample Module
   Confirm properties configuration:
   groupId: org.jahia.modules
   artifactId: sample
   version: 1.0-SNAPSHOT
   package: org.jahia.modules
-  digitalFactoryVersion: 7.1.0.0
+  digitalFactoryVersion: 7.1.1.0
   moduleName: Sample Module
    Y: : Y
 +--
@@ -64,7 +64,7 @@ Choose a number or apply filter (format: [groupId:]artifactId, case sensitive co
 *--*--+
 | moduleName | The Jahia name of the module
 *--*--+
-| digitalFactoryVersion | This is the Digital Factory version you are using (e.g. 7.1.0.0)
+| digitalFactoryVersion | This is the Digital Experience Manager version you are using (e.g. 7.1.1.0)
 *--*--+
 | artifactId | The Maven name of the the module (should be lowercase letters and no strange symbols)
 *--*--+
