@@ -60,9 +60,7 @@
 
     <modules>
         <module>jahia-module-archetype</module>
-        <module>jahia-app-archetype</module>
         <module>jahia-templatesSet-archetype</module>
-        <module>jahia-profileModule-archetype</module>
     </modules>
 
     <repositories>
