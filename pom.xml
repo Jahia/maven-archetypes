@@ -79,9 +79,10 @@
     </repositories>
 
     <scm>
-        <connection>scm:svn:https://devtools.jahia.com/svn/maven-archetypes/trunk/</connection>
-        <developerConnection>scm:svn:https://devtools.jahia.com/svn/maven-archetypes/trunk/</developerConnection>
-        <url>https://devtools.jahia.com/svn/maven-archetypes/trunk</url>
+        <connection>scm:git:git@github.com:Jahia/maven-archetypes.git</connection>
+        <url>scm:git:git@github.com:Jahia/maven-archetypes.git</url>
+        <developerConnection>scm:git:git@github.com:Jahia/maven-archetypes.git</developerConnection>
+        <tag>HEAD</tag>
     </scm>
     
     <distributionManagement>
