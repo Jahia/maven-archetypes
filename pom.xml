@@ -50,13 +50,207 @@
     <artifactId>jahia-archetypes</artifactId>
     <version>2.6-SNAPSHOT</version>
     <name>Jahia Archetypes</name>
+    <description>Parent of the archetype projects for creating Digital Experience Manager modules</description>
     <packaging>pom</packaging>
-    
+
+    <licenses>
+        <license>
+            <name>GNU General Public License</name>
+            <url>http://www.gnu.org/licenses/gpl.txt</url>
+            <distribution>repo</distribution>
+        </license>
+        <license>
+            <name>JAHIA Sustainable Enterprise License</name>
+            <url>https://github.com/Jahia/maven-archetypes/blob/master/license/jsel.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
     <url>http://www.jahia.com</url>  
     <organization>
         <name>Jahia Solutions Group SA</name>
         <url>http://www.jahia.com</url>
     </organization>
+
+    <developers>
+        <developer>
+            <name>Alexander Karmanov</name>
+            <email>alexander.karmanov@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Anna Afshar</name>
+            <email>anna.afshar@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Benjamin Papež</name>
+            <email>benjamin.papez@jahia.com</email>
+            <organization>Jahia Solutions GmbH</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Cédric Mailleux</name>
+            <email>cedric.mailleux@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Christophe Laprun</name>
+            <email>christophe.laprun@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Clément Egger</name>
+            <email>clement.egger@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Damien Gaillard</name>
+            <email>damien.gaillard@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Damien Saulnier</name>
+            <email>damien.saulnier@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Darcy Carrié</name>
+            <email>darcy.carrie@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>David Griffon</name>
+            <email>david.griffon@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Fabrice Aissah</name>
+            <email>fabrice.aissah@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>François Pral</name>
+            <email>francois.pral@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Julian Maurel</name>
+            <email>julian.maurel@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Kevan Jahanshahi</name>
+            <email>kevan.jahanshahi@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Philippe Vollenweider</name>
+            <email>philippe.vollenweider@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Quentin Lamerand</name>
+            <email>quentin.lamerand@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Régis Mora</name>
+            <email>regis.mora@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Rizak Ahmed</name>
+            <email>rizak.ahmed@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Serge Huber</name>
+            <email>serge.huber@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Sergiy Shyrkov</name>
+            <email>sergiy.shyrkov@jahia.com</email>
+            <organization>Jahia Solutions GmbH</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Stéphanie Rouaud</name>
+            <email>stephanie.rouaud@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Thomas Draier</name>
+            <email>thomas.draier@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Wanda Egger</name>
+            <email>wanda.egger@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Werner Assek</name>
+            <email>werner.assek@jahia.com</email>
+            <organization>Jahia Solutions Group SA</organization>
+            <organizationUrl>http://www.jahia.com/</organizationUrl>
+        </developer>
+    </developers>
+    <contributors>
+        <!-- List of contributors and former developers. Thanks to all of you guys! -->
+        <contributor>
+            <name>Charles Flond</name>
+        </contributor>
+        <contributor>
+            <name>Fabrice Cantegrel</name>
+        </contributor>
+        <contributor>
+            <name>Frédéric Pierre</name>
+        </contributor>
+        <contributor>
+            <name>Guillaume Lucazeau</name>
+        </contributor>
+        <contributor>
+            <name>Islam El-Sayed</name>
+        </contributor>
+        <contributor>
+            <name>Khaled Tlili</name>
+        </contributor>
+        <contributor>
+            <name>Khue Nguyen</name>
+        </contributor>
+        <contributor>
+            <name>Romain Felden</name>
+        </contributor>
+        <contributor>
+            <name>Sophia Batata</name>
+        </contributor>
+        <contributor>
+            <name>Xavier Lawrence</name>
+        </contributor>
+    </contributors>
 
     <modules>
         <module>jahia-module-archetype</module>
