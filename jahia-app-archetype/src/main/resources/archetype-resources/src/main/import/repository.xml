@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<content xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:jnt="http://www.jahia.org/jahia/nt/1.0"
-              xmlns:jcr="http://www.jcp.org/jcr/1.0"
-              xmlns:jmix="http://www.jahia.org/jahia/mix/1.0" xmlns:j="http://www.jahia.org/jahia/1.0"
-              xmlns:mix="http://www.jcp.org/jcr/mix/1.0" >
-    <templateSets jcr:primaryType="jnt:templateSets">
-        <${artifactId} jcr:primaryType="jnt:virtualsite" j:installedModules="${artifactId}" j:siteType="jahiapp">
-            <portlets jcr:primaryType="jnt:portletFolder"/>
-            <files jcr:primaryType="jnt:folder"/>
-            <contents jcr:primaryType="jnt:contentFolder"/>
-            <templates jcr:primaryType="jnt:templatesFolder">
-                <files jcr:primaryType="jnt:folder">
-                    <themes jcr:primaryType="jnt:folder">
-                        <default jcr:primaryType="jnt:folder">
-
-                        </default>
-                    </themes>
-                </files>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <${artifactId} j:dependencies="default"
+                j:installedModules="${artifactId}"
+                j:modulePriority="0"
+                j:moduleType="jahiapp"
+                j:title="${moduleName}"
+                jcr:primaryType="jnt:module">
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
                 <contents jcr:primaryType="jnt:contentFolder"/>
-
-            </templates>
-        </${artifactId}>
-    </templateSets>
+                <templates jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder">
+                        <themes jcr:primaryType="jnt:folder">
+                            <default jcr:primaryType="jnt:folder"/>
+                        </themes>
+                    </files>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                </templates>
+                
+            </${artifactId}>
+    </modules>
 </content>
-        
