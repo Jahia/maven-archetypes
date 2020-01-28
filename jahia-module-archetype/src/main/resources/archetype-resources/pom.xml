@@ -53,14 +53,14 @@
     <parent>
         <artifactId>jahia-modules</artifactId>
         <groupId>org.jahia.modules</groupId>
-        <version>${digitalFactoryVersion}</version>
+        <version>${jahiaVersion}</version>
     </parent>
     <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>
     <name>${moduleName}</name>
-    <version>${version}</version>    
+    <version>${version}</version>
     <packaging>bundle</packaging>
-    <description>This is the custom module (${moduleName}) for running on a Digital Experience Manager server.</description>
+    <description>This is the custom module (${moduleName}) for running on a Jahia server.</description>
 
     <scm>
         <connection>scm:dummy:uri</connection>
