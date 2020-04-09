@@ -1,0 +1,5 @@
+<html>
+
+Settings example
+
+</html>
