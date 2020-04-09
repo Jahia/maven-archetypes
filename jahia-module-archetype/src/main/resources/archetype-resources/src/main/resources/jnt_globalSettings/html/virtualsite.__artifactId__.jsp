@@ -1,5 +1,0 @@
-<html>
-
-Settings example
-
-</html>
