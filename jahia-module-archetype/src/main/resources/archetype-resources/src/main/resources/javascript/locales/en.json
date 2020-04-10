@@ -1,0 +1,13 @@
+{
+  "label": {
+    "settings": {
+      "title": "${moduleName} setting"
+    },
+    "action": {
+      "title": "${moduleName} - How to extend the ui ?"
+    },
+    "appsAccordion": {
+      "title": "${moduleName}"
+    }
+  }
+}
