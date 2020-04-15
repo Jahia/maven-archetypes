@@ -48,7 +48,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jahia.archetypes</groupId>
     <artifactId>jahia-archetypes</artifactId>
-    <version>3.1-SNAPSHOT</version>
+    <version>4.0-SNAPSHOT</version>
     <name>Jahia Archetypes</name>
     <description>Parent of the archetype projects for creating Digital Experience Manager modules</description>
     <packaging>pom</packaging>
