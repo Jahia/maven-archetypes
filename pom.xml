@@ -48,7 +48,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jahia.archetypes</groupId>
     <artifactId>jahia-archetypes</artifactId>
-    <version>4.1</version>
+    <version>4.2-SNAPSHOT</version>
     <name>Jahia Archetypes</name>
     <description>Parent of the archetype projects for creating Digital Experience Manager modules</description>
     <packaging>pom</packaging>
@@ -140,7 +140,7 @@
         <connection>scm:git:git@github.com:Jahia/maven-archetypes.git</connection>
         <url>https://github.com/Jahia/maven-archetypes</url>
         <developerConnection>scm:git:git@github.com:Jahia/maven-archetypes.git</developerConnection>
-        <tag>4_1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
