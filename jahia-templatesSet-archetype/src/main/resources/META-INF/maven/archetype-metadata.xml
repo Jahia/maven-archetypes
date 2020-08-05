@@ -33,13 +33,13 @@
 			<defaultValue>Sample Template Set</defaultValue>
 		</requiredProperty>
 		<requiredProperty key="groupId">
-			<defaultValue>org.jahia.modules</defaultValue>
+			<defaultValue>org.foo.modules</defaultValue>
 		</requiredProperty>
-		<requiredProperty key="digitalFactoryVersion">
-			<defaultValue>7.1.1.0</defaultValue>
+		<requiredProperty key="jahiaVersion">
+			<defaultValue>8.0.0.0</defaultValue>
 		</requiredProperty>
 		<requiredProperty key="version">
-			<defaultValue>1.0-SNAPSHOT</defaultValue>
+			<defaultValue>1.0.0-SNAPSHOT</defaultValue>
 		</requiredProperty>
 	</requiredProperties>
 </archetype-descriptor>
