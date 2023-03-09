@@ -49,7 +49,7 @@
     <groupId>org.jahia.archetypes</groupId>
     <artifactId>jahia-archetypes</artifactId>
     <version>4.3-SNAPSHOT</version>
-    <name>Jahia Archetypes</name>
+    <name>Archetype - Jahia - Root</name>
     <description>Parent of the archetype projects for creating Digital Experience Manager modules</description>
     <packaging>pom</packaging>
 
@@ -134,6 +134,7 @@
     <modules>
         <module>jahia-module-archetype</module>
         <module>jahia-templatesSet-archetype</module>
+        <module>jahia-reactjs-admin-module-archetype</module>
     </modules>
 
     <scm>

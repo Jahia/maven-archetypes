@@ -51,8 +51,8 @@
         <version>4.3-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>jahia-templatesSet-archetype</artifactId>
-    <name>Archetype - Jahia - Module - Template Set</name>
-    <description>Archetype for creating a new template set project to be run on a Jahia server</description>
+    <artifactId>jahia-reactjs-admin-module-archetype</artifactId>
+    <name>Archetype - Jahia - Module - ReactJS Administration</name>
+    <description>Archetype for creating a new ReactJS Administration module project to be run on a Jahia server</description>
     <packaging>maven-archetype</packaging>
 </project>
