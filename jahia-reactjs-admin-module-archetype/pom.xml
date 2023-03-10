@@ -48,7 +48,7 @@
     <parent>
         <groupId>org.jahia.archetypes</groupId>
         <artifactId>jahia-archetypes</artifactId>
-        <version>4.3-SNAPSHOT</version>
+        <version>4.3</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>jahia-reactjs-admin-module-archetype</artifactId>
