@@ -48,9 +48,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jahia.archetypes</groupId>
     <artifactId>jahia-archetypes</artifactId>
-    <version>4.4-SNAPSHOT</version>
+    <version>4.4</version>
     <name>Archetype - Jahia DXP 8+ - Root</name>
-    <description>Parent of the Jahia DXP >= 8 archetype projects for creating modules</description>
+    <description>Parent of the Jahia DXP &gt;= 8 archetype projects for creating modules</description>
     <packaging>pom</packaging>
 
     <licenses>
@@ -141,7 +141,7 @@
         <connection>scm:git:git@github.com:Jahia/maven-archetypes.git</connection>
         <url>https://github.com/Jahia/maven-archetypes</url>
         <developerConnection>scm:git:git@github.com:Jahia/maven-archetypes.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>4_4</tag>
     </scm>
 
     <distributionManagement>

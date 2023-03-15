@@ -48,11 +48,11 @@
     <parent>
         <groupId>org.jahia.archetypes</groupId>
         <artifactId>jahia-archetypes</artifactId>
-        <version>4.4-SNAPSHOT</version>
+        <version>4.4</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>jahia-module-archetype</artifactId>
     <name>Archetype - Jahia DXP 8+ - Module - Generic</name>
-    <description>Jahia DXP >=8 - Archetype for creating a new module project</description>
+    <description>Jahia DXP &gt;=8 - Archetype for creating a new module project</description>
     <packaging>maven-archetype</packaging>
 </project>
