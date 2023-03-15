@@ -52,7 +52,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>jahia-reactjs-admin-module-archetype</artifactId>
-    <name>Archetype - Jahia - Module - ReactJS Administration</name>
-    <description>Archetype for creating a new ReactJS Administration module project to be run on a Jahia server</description>
+    <name>Archetype - Jahia DXP 8+ - Module - ReactJS Administration</name>
+    <description>Jahia DXP >= 8 - Archetype for creating a new ReactJS Administration module project</description>
     <packaging>maven-archetype</packaging>
 </project>

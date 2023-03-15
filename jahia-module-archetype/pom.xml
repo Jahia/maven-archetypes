@@ -52,7 +52,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>jahia-module-archetype</artifactId>
-    <name>Archetype - Jahia - Module - Generic</name>
-    <description>Archetype for creating a new module project to be run on a Jahia server</description>
+    <name>Archetype - Jahia DXP 8+ - Module - Generic</name>
+    <description>Jahia DXP >=8 - Archetype for creating a new module project</description>
     <packaging>maven-archetype</packaging>
 </project>

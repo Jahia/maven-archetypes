@@ -49,8 +49,8 @@
     <groupId>org.jahia.archetypes</groupId>
     <artifactId>jahia-archetypes</artifactId>
     <version>4.4-SNAPSHOT</version>
-    <name>Archetype - Jahia - Root</name>
-    <description>Parent of the archetype projects for creating Digital Experience Manager modules</description>
+    <name>Archetype - Jahia DXP 8+ - Root</name>
+    <description>Parent of the Jahia DXP >= 8 archetype projects for creating modules</description>
     <packaging>pom</packaging>
 
     <licenses>
