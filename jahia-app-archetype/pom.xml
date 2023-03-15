@@ -52,7 +52,7 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>jahia-app-archetype</artifactId>
-	<name>Archetype - jahia-app-archetype</name>
-	<description>Archetype for creating a new JahiApp module project to be run on a Digital Experience Manager server</description>
+	<name>Archetype - Jahia DXP 7 - Module - JahiApp</name>
+	<description>Legacy Jahia DXP 7 - Archetype for creating a new JahiApp module project</description>
 	<packaging>maven-archetype</packaging>
 </project>

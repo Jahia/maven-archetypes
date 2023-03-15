@@ -49,8 +49,8 @@
     <groupId>org.jahia.archetypes</groupId>
     <artifactId>jahia-archetypes</artifactId>
     <version>2.4.3-SNAPSHOT</version>
-    <name>Jahia Archetypes</name>
-    <description>Parent of the archetype projects for creating Digital Experience Manager modules</description>
+    <name>Archetype - Jahia DXP 7 - Root</name>
+    <description>Legacy Jahia DXP 7 - Parent of the archetype projects for creating modules</description>
     <packaging>pom</packaging>
 
     <licenses>
@@ -66,7 +66,7 @@
         </license>
     </licenses>
 
-    <url>http://www.jahia.com</url>  
+    <url>http://www.jahia.com</url>
     <organization>
         <name>Jahia Solutions Group SA</name>
         <url>http://www.jahia.com</url>
