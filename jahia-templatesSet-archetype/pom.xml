@@ -52,7 +52,7 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>jahia-templatesSet-archetype</artifactId>
-	<name>Archetype - Jahia DXP 7 - Module Template Set</name>
+	<name>Archetype - Jahia DXP 7 - Module - Template Set</name>
 	<description>Legacy Jahia DXP 7 - Archetype for creating a new template set project</description>
 	<packaging>maven-archetype</packaging>
 </project>
