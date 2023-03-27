@@ -52,6 +52,7 @@ const singletonDeps = [
 ];
 
 const notImported = [
+    '@jahia/data-helper',
     '@jahia/moonstone'
 ];
 
