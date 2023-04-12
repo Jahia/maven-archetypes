@@ -28,7 +28,8 @@ window.jahia.uiExtender.registry.add('callback', '${artifactId}Example', {
             appsTarget: '${artifactId}accordion',
             isEnabled: function(siteKey) {
                 return siteKey !== 'systemsite'
-            }
+            },
+            requiredSitePermission: 'additionalAccordionAccess'
         });
     }
 });
