@@ -1,6 +1,4 @@
 {
-  "${artifactId}": {
-    "label" : "Administration sample",
-    "hello" : "Hello"
-  }
+  "label": "Administration sample",
+  "hello": "Hello {{name}}!"
 }
