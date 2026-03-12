@@ -9,30 +9,10 @@
     <fileSet filtered="true">
       <directory />
       <includes>
-        <include>babel.config.js</include>
-        <include>package.json</include>
-        <include>webpack.config.js</include>
-      </includes>
-    </fileSet>
-    <fileSet filtered="true">
-      <directory>src/javascript</directory>
-    </fileSet>
-    <fileSet filtered="true">
-      <directory>src/main/java</directory>
-    </fileSet>
-    <fileSet filtered="true">
-      <directory>src/main/resources</directory>
-    </fileSet>
-    <fileSet>
-      <directory />
-      <includes>
-        <include>.gitignore</include>
-        <include>.eslintignore</include>
-        <include>.eslintrc.json</include>
+        <include>**/*</include>
       </includes>
     </fileSet>
   </fileSets>
-
   <requiredProperties>
     <requiredProperty key="version">
       <defaultValue>0.1.0-SNAPSHOT</defaultValue>
