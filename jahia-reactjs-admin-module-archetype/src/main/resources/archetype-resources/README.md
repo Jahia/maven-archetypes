@@ -26,5 +26,7 @@ docker run --name jahia-discovery -dp 8080:8080 jahia/jahia-discovery:latest
 mvn clean verify
 
 # Push the module to the running instance
-docker cp target/sampleAdmin-1.0.0-SNAPSHOT.jar jahia-discovery:/var/jahia/modules
+docker cp target/${artifactId}-${version}.jar jahia-discovery:/var/jahia/modules
 ```
+
+Your local Jahia instance will be running on <http://localhost:8080/start> and you can log in using the `root`/`root1234` credentials.
