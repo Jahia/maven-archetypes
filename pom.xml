@@ -61,7 +61,7 @@
         </license>
         <license>
             <name>JAHIA Sustainable Enterprise License</name>
-            <url>https://github.com/Jahia/maven-archetypes/blob/master/license/jsel.txt</url>
+            <url>https://github.com/Jahia/maven-archetypes/blob/main/license/jsel.txt</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
