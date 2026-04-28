@@ -3,4 +3,4 @@
 maven-archetypes: minor
 ---
 
-Update the JS archetype to use webpack instead of Vite. (#41)
+Update the JS archetype to use Vite instead of webpack. (#41)
