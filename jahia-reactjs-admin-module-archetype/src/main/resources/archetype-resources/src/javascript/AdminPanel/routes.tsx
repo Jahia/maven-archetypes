@@ -11,7 +11,7 @@ export const registerRoutes = async () => {
     targets: ["administration-server:10"],
     icon: <DefaultEntry />,
     label: "${artifactId}:label",
-    path: `*`, // Catch everything and let the app handle routing logic
+    path: "*", // Catch everything and let the app handle routing logic
     defaultPath: "",
     isSelectable: true,
     render: () => (
