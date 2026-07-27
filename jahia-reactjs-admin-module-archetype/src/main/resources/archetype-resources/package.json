@@ -6,23 +6,20 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@jahia/moonstone": "~2.16.2",
-    "@jahia/ui-extender": "^1.3.0",
-    "i18next": "^20.6.1",
+    "@jahia/moonstone": "^2.20.3",
+    "@jahia/ui-extender": "^2.0.0",
+    "i18next": "^26.3.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-i18next": "^11.2.2"
+    "react-i18next": "^17.0.11"
   },
   "devDependencies": {
-    "@jahia/vite-federation-plugin": "^0.1.2",
+    "@jahia/vite-federation-plugin": "^0.1.3",
     "@types/react": "^18.3.28",
-    "typescript": "^5.9.3",
-    "vite": "^7.3.1"
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5"
   },
   "jahia": {
-    "remotes": {
-      "jahia": "javascript/apps/remoteEntry.js"
-    },
     "urlPatterns": {
       "jahia": "/administration/(?<siteKey>\\S*?)/settings/(?<settingName>\\S*)"
     }
