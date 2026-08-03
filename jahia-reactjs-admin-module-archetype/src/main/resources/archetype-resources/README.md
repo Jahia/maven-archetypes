@@ -2,7 +2,7 @@
 
 Your edition UI extension module was successfully created. If this is your first time creating a module, you may want to consult the [Extending and customizing Jahia UI documentation](https://academy.jahia.com/documentation/jahia-cms/jahia-8.2/developer/extending-and-customizing-jahia-ui/first-steps).
 
-This README assusmes you have a working development environment with:
+This README assumes you have a working development environment with:
 
 - Maven 3+
 - Java 17+

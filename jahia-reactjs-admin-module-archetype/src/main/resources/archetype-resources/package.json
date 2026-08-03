@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vite build"
+    "build": "tsc && vite build"
   },
   "dependencies": {
     "@jahia/moonstone": "^2.20.3",
