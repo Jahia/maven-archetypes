@@ -12,6 +12,10 @@ Available archetypes
 - jahia-reactjs-admin-module-archetype : used to create Jahia server ReactJS Administration UI extension projects
 - jahia-templatesSet-archetype : used to create Jahia server templates sets for styling the site and the pages
 
+All archetypes accept a `jahiaVersion` property, which sets the `jahia-modules` parent version of the generated project.
+For `jahia-reactjs-admin-module-archetype`, the minimum supported value is `8.2.1.0` (it defaults to `8.2.3.0`): the
+generated module relies on module federation fixes that are not present in earlier Jahia releases.
+
 Quick example
 -------------
 

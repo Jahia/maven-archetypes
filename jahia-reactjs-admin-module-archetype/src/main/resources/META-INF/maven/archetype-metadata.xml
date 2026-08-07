@@ -3,7 +3,7 @@
   xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
-  name="React UI extension module for Jahia 8+, built with Vite"
+  name="React UI extension module for Jahia 8.2.1+, built with Vite"
   >
   <fileSets>
     <fileSet filtered="true">
@@ -14,6 +14,12 @@
     </fileSet>
   </fileSets>
   <requiredProperties>
+    <!-- Sets the jahia-modules parent version. 8.2.1.0 is the oldest supported
+         value: the generated module relies on module federation fixes that are
+         not present in earlier releases. -->
+    <requiredProperty key="jahiaVersion">
+      <defaultValue>8.2.3.0</defaultValue>
+    </requiredProperty>
     <requiredProperty key="version">
       <defaultValue>0.1.0-SNAPSHOT</defaultValue>
     </requiredProperty>
