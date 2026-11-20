@@ -11,7 +11,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>jahia-reactjs-admin-module-archetype</artifactId>
-    <name>Jahia 8+ UI extension</name>
-    <description>React UI extension module for Jahia 8+, built with Vite</description>
+    <name>Jahia 8.2.2+ UI extension</name>
+    <description>React UI extension module for Jahia 8.2.2+ and app-shell 4+, built with Vite</description>
     <packaging>maven-archetype</packaging>
 </project>
