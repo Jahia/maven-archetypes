@@ -6,12 +6,15 @@ This README assumes you have a working development environment with:
 
 - Maven 3+
 - Java 17+
-- A recent version of NodeJS
+- NodeJS 20.19+ or 22.12+
 - Yarn 4+
+
+The module is built with Vite, so it needs app-shell 4.0 or later in your Jahia instance. Its `pom.xml` declares `app-shell=4.0` in `<jahia-depends>`, so Jahia refuses to start it on an older app-shell.
 
 The easiest way to install and manage development tools per-project instead of globally is to use [Mise](https://mise.jdx.dev/). This project includes a `mise.toml` file, run `mise install` to get a functional development environment in a few seconds.
 
-## Getting Started
+#set( $symbol_pound = '#' )
+${symbol_pound}${symbol_pound} Getting Started
 
 The easiest way to get a running Jahia instance locally is by using the [Jahia Discovery Docker image](https://hub.docker.com/r/jahia/jahia-discovery):
 
