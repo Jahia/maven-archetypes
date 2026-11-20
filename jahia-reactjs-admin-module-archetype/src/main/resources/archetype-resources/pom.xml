@@ -19,6 +19,7 @@
 
     <properties>
         <jahia-module-type>system</jahia-module-type>
+        <jahia-depends>app-shell=4.0</jahia-depends>
     </properties>
 
     <repositories>
