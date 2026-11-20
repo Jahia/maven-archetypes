@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.jahia.archetypes</groupId>
         <artifactId>jahia-archetypes</artifactId>
-        <version>4.9-SNAPSHOT</version>
+        <version>5.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>jahia-reactjs-admin-module-archetype</artifactId>
