@@ -20,7 +20,7 @@
     "@jahia/ui-extender": "2.0.0",
     "@jahia/vite-federation-plugin": "^0.2.1",
     "@types/react": "~18.3.28",
-    "i18next": "23.16.8",
+    "i18next": "26.3.4",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-i18next": "15.7.4",
